@@ -2,7 +2,7 @@ package com.example.demo
 
 interface RateLimiter {
 
-    fun initialize(size: Int): Unit
+    fun initialize(size: Int)
 
     fun isRequestAllowable(): Boolean
 
