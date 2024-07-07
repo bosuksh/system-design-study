@@ -1,5 +1,7 @@
-package com.example.demo
+package com.example.demo.config
 
+import com.example.demo.api.ratelimiter.RateLimiter
+import com.example.demo.api.RateLimiterFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.web.builders.HttpSecurity

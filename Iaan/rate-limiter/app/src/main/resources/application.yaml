@@ -1,4 +1,12 @@
 
 logging:
   level:
-    org.springframework.security: DEBUG
+    org.springframework.security: INFO
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+
