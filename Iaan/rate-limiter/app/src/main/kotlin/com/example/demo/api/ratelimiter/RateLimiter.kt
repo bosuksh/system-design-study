@@ -6,6 +6,6 @@ interface RateLimiter {
 
     fun isRequestAllowable(): Boolean
 
-    fun refill(delta : Long)
+    fun updateBucket(delta : Long)
 
 }

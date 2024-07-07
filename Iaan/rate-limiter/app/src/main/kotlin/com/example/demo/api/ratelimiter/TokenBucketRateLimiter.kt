@@ -34,7 +34,7 @@ class TokenBucketRateLimiter(redisTemplate: RedisTemplate<String, String>) : Rat
         return false
     }
 
-    override fun refill(delta: Long) {
+    override fun updateBucket(delta: Long) {
         val value = opsForValue.get("tokenBucket")?.toInt() ?: return
 
         if (value + delta >= BUCKET_SIZE) {
