@@ -17,7 +17,7 @@ class TokenBucketRateLimiter(redisTemplate: RedisTemplate<String, String>) : Rat
     }
 
 
-    override fun initialize(size: Int) {
+    final override fun initialize(size: Int) {
         opsForValue.set("tokenBucket", size.toString())
     }
 
